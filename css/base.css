@@ -16,3 +16,5 @@ a {
 		float: right;
 	}
 }
+/*(http[^\s]+)[\s]+(http[^\s]+)
+<li>\n\t\t\t\t<a href="\1">\n\t\t\t\t\t<img src="\2" alt="">\n\t\t\t\t</a>\n\t\t\t</li>*/
