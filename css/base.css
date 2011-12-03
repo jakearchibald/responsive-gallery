@@ -6,13 +6,73 @@ a {
 	color: #369;
 	text-decoration: none;
 }
-@media all and (min-width: 640px) {
-	[role="main"] {
-		width: 60%;
-		float: left;
+/* Gallery */
+	.gallery,
+	.gallery li {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		font-size: 0;
 	}
-	[role="complementary"] {
-		width: 30%;
-		float: right;
+	.gallery li {
+		display: inline;
 	}
-}
+	.gallery a:link,
+	.gallery a:visited {
+		display: inline-block;
+		width: 75px;
+		height: 75px;
+		padding: 10px;
+		margin: -10px 0 0 -10px;
+	}
+	.gallery a:hover,
+	.gallery a:active {
+		background: #eee;
+	}
+	.gallery img {
+		vertical-align: middle;
+		display: block;
+		
+		-webkit-transition: opacity 0.5s ease-out;
+		-moz-transition: opacity 0.5s ease-out;
+		-ms-transition: opacity 0.5s ease-out;
+		-o-transition: opacity 0.5s ease-out;
+		transition: opacity 0.5s ease-out;
+	}
+	.fade-imgs .gallery img {
+		opacity: 0;
+	}
+	.fade-imgs .gallery img.loaded {
+		opacity: 1;
+	}
+/* Responsive stuff */
+	.gallery-test {
+		width: 10px;
+	}
+	@media all and (min-width: 640px) {
+		[role="main"] {
+			width: 60%;
+			float: left;
+		}
+		[role="complementary"] {
+			width: 30%;
+			float: right;
+		}
+	}
+	@media all and (min-width: 926px) {
+		.gallery-test {
+			width: 20px;
+		}
+		.gallery a:link,
+		.gallery a:visited {
+			height: 240px;
+			width: 240px;
+			line-height: 245px;
+			overflow: hidden;
+			padding: 0;
+			margin: 0 10px 10px 0;
+		}
+		.gallery img {
+			display: inline-block;
+		}
+	}
