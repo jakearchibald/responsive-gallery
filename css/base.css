@@ -1,0 +1,18 @@
+body {
+	font: 1em/1.5 Cambria, Georgia, serif;
+	margin: 0 5%;
+}
+a {
+	color: #369;
+	text-decoration: none;
+}
+@media all and (min-width: 640px) {
+	[role="main"] {
+		width: 60%;
+		float: left;
+	}
+	[role="complementary"] {
+		width: 30%;
+		float: right;
+	}
+}
