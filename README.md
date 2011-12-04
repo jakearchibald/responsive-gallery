@@ -13,11 +13,11 @@ However, this solution is dirty as hell, but it works.
 
 First, surround your image, or set of images with some dirty-magic script elements:
 
-	&lt;script class="responsive-gallery"&gt;document.write('&lt;' + '!--')&lt;/script&gt;&lt;noscript&gt;
-		&lt;a href="http://www.flickr.com/photos/major_clanger/3690964841/"&gt;
-			&lt;img src="http://farm3.staticflickr.com/2624/3690964841_3f157fa6ba_t.jpg" alt=""&gt;
-		&lt;/a&gt;
-	&lt;/noscript&gt;&lt;!----&gt;
+	<script class="responsive-gallery">document.write('<' + '!--')</script><noscript>
+		<a href="http://www.flickr.com/photos/major_clanger/3690964841/">
+			<img src="http://farm3.staticflickr.com/2624/3690964841_3f157fa6ba_t.jpg" alt="">
+		</a>
+	</noscript><!---->
 
 Dirty isn't it? Anyway, then include responsiveGallery.js, and initialise your gallery:
 
