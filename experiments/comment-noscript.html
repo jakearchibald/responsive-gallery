@@ -13,6 +13,14 @@
 	<script id="dirty">document.write('<' + '!--')</script><noscript>
 		<img src="http://farm4.staticflickr.com/3251/3037941702_295f176804_s.jpg" alt="A cat, asleep">
 	</noscript -->
+	<p>Here we attempt to get the text out of a comment.</p>
+	<p>Once we have the markup as text, we can manipulate and parse it.</p>
+	<p>
+		Due to the tricks we're using, the comment's text value will have
+		an extraneous <code>&lt;noscript&gt;</code> at the start and
+		<code>&lt;/noscript</code> at the end. No worries, 
+		we can get rid of that later with <code>text.slice(10, -11)</code>.
+	</p>
 	<script>
 		window.onload = function() {
 			var script = document.getElementById('dirty'),
