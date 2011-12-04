@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Image loading while hidden</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
+	<meta http-equiv="cleartype" content="on">
+</head>
+<body>
+	<p>
+		This page triggers 2 image requests, despite none being shown.
+	</p>
+	<img style="display:none" src="http://farm4.staticflickr.com/3251/3037941702_295f176804_s.jpg" alt="A cat, asleep">
+	<script>
+		new Image().src = 'http://farm6.staticflickr.com/5210/5335089843_0fb074a82d_s.jpg';
+	</script>
+</body>
+</html>
