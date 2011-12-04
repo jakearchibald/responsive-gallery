@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Getting the content of noscript elements</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
+	<meta http-equiv="cleartype" content="on">
+</head>
+<body>
+	<noscript>
+		<img src="http://farm4.staticflickr.com/3251/3037941702_295f176804_s.jpg" alt="A cat, asleep">
+	</noscript>
+	<script>
+		window.onload = function() {
+			var noscript = document.getElementsByTagName('noscript')[0],
+				msg = "The content of the noscript element is:"
+					+ (noscript.textContent || noscript.innerText);
+			
+			document.body.appendChild(
+				document.createTextNode(msg)
+			);
+		};
+	</script>
+</body>
+</html>
