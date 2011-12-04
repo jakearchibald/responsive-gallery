@@ -7,7 +7,7 @@ I'm trying to come up with a solution which:
 * Keeps the media queries in CSS
 * Fast enough to work on resize
 
-However, this solution is dirty as hell, but it works, (here's an example)[http://jakearchibald.github.com/responsive-gallery/].
+However, this solution is dirty as hell, but it works, [here's an example](http://jakearchibald.github.com/responsive-gallery/).
 
 # Usage
 
