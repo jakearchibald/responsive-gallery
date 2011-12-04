@@ -47,7 +47,7 @@ a {
 	}
 /* Responsive stuff */
 	.gallery-test {
-		width: 10px;
+		width: 1px;
 	}
 	@media all and (min-width: 640px) {
 		[role="main"] {
@@ -61,7 +61,7 @@ a {
 	}
 	@media all and (min-width: 926px) {
 		.gallery-test {
-			width: 20px;
+			width: 2px;
 		}
 		.gallery a:link,
 		.gallery a:visited {

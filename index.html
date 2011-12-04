@@ -256,10 +256,18 @@
 		</p>
 	</article>
 </aside>
-<script src="js/base.js"></script>
+<script src="js/responsiveGallery.js"></script>
+<script src="js/core.js"></script>
 <script>
-	iLoveCats.fadeImgsOnLoad();
-	iLoveCats.initGalleries();
+	responsiveGallery({
+		scriptClass: 'gallery-hide',
+		testClass: 'gallery-test',
+		initialSuffix: '_m.jpg',
+		suffixes: {
+			'1': '_s.jpg',
+			'2': '_m.jpg'
+		}
+	});
 </script>
 </body>
 </html>
