@@ -54,10 +54,6 @@ img {
 		opacity: 1;
 	}
 /* Responsive stuff */
-	.gallery-test,
-	.video-intro-test {
-		width: 1px;
-	}
 	@media all and (min-width: 640px) {
 		[role="main"] {
 			width: 60%;
@@ -68,15 +64,15 @@ img {
 			float: right;
 		}
 		.video-intro-test {
-			width: 2px;
+			width: 1px;
 		}
 	}
 	@media all and (min-width: 926px) {
 		.gallery-test {
-			width: 2px;
+			width: 1px;
 		}
 		.video-intro-test {
-			width: 3px;
+			width: 2px;
 		}
 		.gallery a:link,
 		.gallery a:visited {

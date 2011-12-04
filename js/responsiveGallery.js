@@ -38,6 +38,7 @@
 
 		// Add the test div to the page
 		testDiv.className = args.testClass || 'gallery-test';
+		testDiv.style.cssText = 'position:absolute;top:-100em';
 		document.body.insertBefore( testDiv, document.body.firstChild );
 
 		// Init galleries
@@ -50,7 +51,7 @@
 		}
 
 		function respond() {
-			var newSuffix = args.suffixes[testDiv.offsetWidth];
+			var newSuffix = args.suffixes[testDiv.offsetWidth] || args.initialSuffix;
 			
 			if (newSuffix === lastSuffix) {
 				return;
