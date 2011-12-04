@@ -17,7 +17,7 @@ First, surround your image, or set of images with some dirty-magic script elemen
 		<a href="http://www.flickr.com/photos/major_clanger/3690964841/">
 			<img src="http://farm3.staticflickr.com/2624/3690964841_3f157fa6ba_t.jpg" alt="">
 		</a>
-	</noscript><!---->
+	</noscript -->
 
 Dirty isn't it? Anyway, then include responsiveGallery.js, and initialise your gallery:
 

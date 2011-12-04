@@ -17,7 +17,7 @@
 	}
 
 	function Gallery(script) {
-		this.htmlStr = script.nextSibling.nodeValue.slice( 10, -15 );
+		this.htmlStr = script.nextSibling.nodeValue.slice( 10, -11 );
 		this.container = document.createElement( 'div' );
 		script.parentNode.insertBefore( this.container, script.nextSibling );
 	}
