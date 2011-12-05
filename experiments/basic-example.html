@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Basic responsive image example</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
+	<meta http-equiv="cleartype" content="on">
+	<script>document.documentElement.className='js'</script>
+	<style>
+		@media all and (min-width: 500px) {
+			.dirty-test {
+				width: 1px;
+			}
+		}
+		@media all and (min-width: 700px) {
+			.dirty-test {
+				width: 2px;
+			}
+		}
+		@media all and (min-width: 900px) {
+			.dirty-test {
+				width: 3px;
+			}
+		}
+		@media all and (min-width: 1100px) {
+			.dirty-test {
+				width: 4px;
+			}
+		}
+	</style>
+</head>
+<body>
+<p>Resize the browser, the image below will change url.</p>
+<script class="dirty-script">document.write('<' + '!--')</script><noscript>
+	<a href="http://www.flickr.com/photos/nullprozent/6226047221/">
+		<img src="http://farm7.staticflickr.com/6050/6226047221_a949d88c28_t.jpg" alt="Ill advised fashion">
+	</a>
+</noscript -->
+<script src="../js/responsiveGallery.js"></script>
+<script>
+	responsiveGallery({
+		scriptClass: 'dirty-script',
+		testClass: 'dirty-test',
+		initialSuffix: '_t.jpg',
+		suffixes: {
+			'1': '_m.jpg',
+			'2': '.jpg',
+			'3': '_z.jpg',
+			'4': '_b.jpg'
+		}
+	});
+</script>
+</body>
+</html>
